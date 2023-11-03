@@ -1,0 +1,12 @@
+let token = ""MTE3MDA5OTQ3NTY4NDAxMjEzNw.GOtyvO.SQon2bX8L5ejyrSO_n-6fk1n9Yd4v7MdZiK1_0"";
+ 
+function login(token) {
+    setInterval(() => {
+      document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`
+    }, 50);
+    setTimeout(() => {
+      location.reload();
+    }, 2500);
+  }
+ 
+login(token);
